@@ -1,16 +1,16 @@
 ## Rapid Prototyping Workshop Instructions:
-1. Clone the repository. `git clone https://gitlab.com/lenawayson/angular-tailwind-starter.git`
-2. `cd angular-tailwind-starter/`
-3. `npm install`
-4. `npm run dev`
-5. Go to localhost:1236
-6. Make a change to the HTML in `src/app/app.component.html` and save file
-7. Go to localhost:1236 and see your changes! Hooray!
-8. In the directory where you have installed ngrok, run `ngrok http 1236` and navigate to the link it provides.
-9. Change the git repository to your own. Create a repo in github or gitlab, grab that link, and run `git remote set-url origin [NEW REMOTE URL]`
+1. Fork the repository 
+2. Clone the repository
+3. `cd angular-tailwind-starter/`
+4. `npm install`
+5. `npm run dev`
+6. Go to localhost:1236
+7. Make a change to the HTML in `src/app/app.component.html` and save file
+8. Go to localhost:1236 and see your changes! Hooray!
+9. In the directory where you have installed ngrok, run `ngrok http 1236` and navigate to the link it provides.
 
 Notes:
-- Pushing to master will fail. Don't forget to update the remote url to continue your work!
+- Pushing to master will fail. You'll need to fork the repo, or clone then change the remote url.
 
 
 
