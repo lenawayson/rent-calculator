@@ -1,3 +1,20 @@
+## Rapid Prototyping Workshop Instructions:
+1. Clone the repository. `git clone https://gitlab.com/lenawayson/angular-tailwind-starter.git`
+2. `cd angular-tailwind-starter/`
+3. `npm install`
+4. `npm run dev`
+5. Go to localhost:1236
+6. Make a change to the HTML in `src/app/app.component.html` and save file
+7. Go to localhost:1236 and see your changes! Hooray!
+8. In the directory where you have installed ngrok, run `ngrok http 1236` and navigate to the link it provides.
+9. Change the git repository to your own. Create a repo in github or gitlab, grab that link, and run `git remote set-url origin [NEW REMOTE URL]`
+
+Notes:
+- Pushing to master will fail. Don't forget to update the remote url to continue your work!
+
+
+
+
 # AngularStarter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
