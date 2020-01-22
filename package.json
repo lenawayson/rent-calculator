@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "dev": "postcss styles.css -o src/assets/build/styles.css && ng serve",
-    "build": "postcss styles.css -o src/assets/build/styles.css && ng build",
+    "start": "ng serve --port 1236",
+    "dev": "npm run css && npm start",
+    "build": "npm run css && ng build",
+    "css": "postcss styles.css -o src/assets/build/styles.css",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
