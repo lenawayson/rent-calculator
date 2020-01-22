@@ -1,0 +1,121 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of Normalize.css and some additional base styles.
+ * You can see the styles here: https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
+ */
+@tailwind base;
+
+/**
+ * This injects any component classes registered by plugins.
+ */
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still override them.
+ * Example:
+ * .btn { ... }
+ * .form-input { ... }
+ */
+.btn {
+  @apply .font-bold;
+  @apply .px-4;
+  @apply .py-2;
+  @apply .rounded;
+}
+.btn-green {
+  @apply .bg-green-300;
+  @apply .text-green-800;
+}
+.btn-green:hover {
+  @apply .bg-green-400;
+  @apply .text-green-800;
+}
+.btn-blue {
+  @apply .bg-blue-500;
+  @apply .text-white;
+}
+.btn-blue:hover {
+  @apply .bg-blue-600;
+}
+.btn-blue-nohover:hover {
+  @apply .bg-blue-500;
+}
+.p-2px {
+  padding: 2px;
+}
+.markdown a {
+  color: theme('colors.blue');
+  text-decoration: underline;
+}
+.markdown ol {
+  list-style-type: decimal;
+  padding-left: theme('padding.4');
+}
+.markdown ul.no-markdown {
+  list-style-type: none;
+  padding-left: inherit;
+}
+.markdown ul {
+  list-style-type: disc;
+  padding-left: theme('padding.4');
+}
+.writing-tb {
+  writing-mode: tb;
+  transform: rotate(180deg);
+}
+@screen md {
+  .skill-map-col + .skill-map-col {
+    @apply ml-4;
+  }
+}
+@media print {
+  .skill-map-col + .skill-map-col {
+    @apply ml-4;
+  }
+}
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your config file.
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the box with Tailwind.
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ */
+
+nav .active a {
+  @apply .underline;
+  text-underline-position: under;
+}
+
+@media print {
+  .print-force-flex-row {
+    @apply flex-row;
+  }
+  .print-force-hide {
+    display: none;
+  }
+}
+
+.overview-masthead li {
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+textarea.onequestion-text:focus {
+  @apply h-16;
+  @apply w-64;
+}
