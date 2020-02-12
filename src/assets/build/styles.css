@@ -649,6 +649,16 @@ video {
   border-radius: 0.25rem;
 }
 
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.shift-up {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
 .btn-green {
   background-color: #9ae6b4;
   color: #276749;

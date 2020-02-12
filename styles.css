@@ -17,12 +17,22 @@
  * .btn { ... }
  * .form-input { ... }
  */
+
 .btn {
   @apply .font-bold;
   @apply .px-4;
   @apply .py-2;
   @apply .rounded;
 }
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.shift-up {
+  transform: translateY(-15px);
+}
+
 .btn-green {
   @apply .bg-green-300;
   @apply .text-green-800;

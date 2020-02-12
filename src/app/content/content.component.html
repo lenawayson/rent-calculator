@@ -1,5 +1,15 @@
 <div id="content" class="text-center">
-        <h1>TOTAL PRICE</h1>
-        <input class="block mx-auto border p-1 border-gray-400 rounded-lg">
-        <button>GO</button>
+        <div>
+                <h1 class="font-bold text-md text-green-600 uppercase p-2 tracking-wider">TOTAL PRICE</h1>
+        </div>
+        <div>
+                <input class="block mx-auto border p-1 border-gray-400 rounded-lg" type="text" required [(ngModel)]="totalPrice">
+        </div>
+        <div class="pt-6"> 
+                <a href="/results/1">
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-full">
+                                GO
+                        </button>
+                </a>
+        </div>
 </div>
