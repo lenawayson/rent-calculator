@@ -13,7 +13,8 @@ export class ResultsComponent implements OnInit {
     {name: "Megan", id: 2, rent: 1000, parking: 100, utilities: null, total: null},
     {name: "Chris", id: 4, rent: 250, parking: 0, utilities: null, total: null},
   ];
-  selected = this.roommates[0]
+  selected = this.roommates[0];
+  total = null;
 
   constructor() { }
 
