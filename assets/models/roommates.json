@@ -1,0 +1,6 @@
+{ "data": [
+    { "name": "Lena", "id": 0, "rent": 630, "parking": 100},
+    { "name": "Evan", "id": 1, "rent": 630, "parking": null},
+    { "name": "Megan", "id": 2, "rent": 1000, "parking": null},
+    { "name": "Chris", "id": 4, "rent": 250, "parking": 100}
+  ] }
