@@ -25,6 +25,24 @@
   @apply .rounded;
 }
 
+.optional {
+  @apply .bg-green-700
+}
+
+.optional:hover:enabled {
+  @apply .bg-green-700
+}
+
+.optional:disabled {
+  background-color: #E2E8F0;
+  @apply .cursor-not-allowed;
+}
+
+.optional:disabled:hover {
+  background-color: #E2E8F0;
+  @apply .cursor-not-allowed;
+}
+
 .rotate-180 {
   transform: rotate(180deg);
 }

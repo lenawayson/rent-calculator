@@ -649,6 +649,24 @@ video {
   border-radius: 0.25rem;
 }
 
+.optional {
+  background-color: #2f855a
+}
+
+.optional:hover:enabled {
+  background-color: #2f855a
+}
+
+.optional:disabled {
+  background-color: #E2E8F0;
+  cursor: not-allowed;
+}
+
+.optional:disabled:hover {
+  background-color: #E2E8F0;
+  cursor: not-allowed;
+}
+
 .rotate-180 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);

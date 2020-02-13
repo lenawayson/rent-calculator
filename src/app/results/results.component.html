@@ -6,22 +6,22 @@
     <div id="tabs" class="flex justify-center mb-0">
         <ul class="flex" style="z-index: 1; margin-bottom: -2px">
             <li class="mr-1 border-l border-t border-r">
-              <a class="bg-white inline-block rounded-t py-2 px-4 text-green-600 font-semibold" (click)="onClick(0)">Lena</a>
+              <a class="bg-white inline-block rounded-t py-2 px-4 text-green-600 font-semibold" (click)="select(0)">Lena</a>
             </li>
             <li class="bg-white mr-1 border-l border-t border-r">
-              <a class="inline-block py-2 px-4 hover:text-green-700 text-green-600 font-semibold" (click)="onClick(1)">Evan</a>
+              <a class="inline-block py-2 px-4 hover:text-green-700 text-green-600 font-semibold" (click)="select(1)">Evan</a>
             </li>
             <li class="bg-white  mr-1 border-l border-t border-r bg-white hover:shift-up">
-              <a class="inline-block py-2 px-4 text-green-600 font-semibold" (click)="onClick(2)">Megan</a>
+              <a class="inline-block py-2 px-4 text-green-600 font-semibold" (click)="select(2)">Megan</a>
             </li>
             <li class="bg-white mr-1 border-l border-t border-r">
-              <a class="inline-block py-2 px-4 text-gray-400 font-semibold" (click)="onClick(3)">Chris</a>
+              <a class="inline-block py-2 px-4 text-gray-400 font-semibold" (click)="select(3)">Chris</a>
             </li>
           </ul>
     </div>
     <div class="bg-white p-4 border">
     <div id="rent" class="mb-4">
-      {{selected.name}}
+      {{ selected.name }}
         <h1 class="text-left font-bold uppercase">Rent</h1>
         ${{ selected.rent }}
     </div>
@@ -35,9 +35,9 @@
     </div>
     <div id="total" class="mb-4">
         <h1 class="text-left font-bold uppercase">Total</h1>
-        ${{total}}
+        ${{ selected.owed }}
         <div id="pay now">
-           <button class="border p-2 border-blue-400 uppercase">Pay Now</button>
+           <button class="border p-2 bg-green-700 uppercase">Pay Now</button>
         </div>
     </div>
    </div>
