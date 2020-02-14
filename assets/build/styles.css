@@ -649,6 +649,30 @@ video {
   border-radius: 0.25rem;
 }
 
+.selected {
+  border-top: solid 3px #48BB78;
+  border-right: solid 1px #E2E8F0;
+  border-left: solid 1px #E2E8F0;
+}
+
+.optional {
+  background-color: #2f855a
+}
+
+.optional:hover:enabled {
+  background-color: #2f855a
+}
+
+.optional:disabled {
+  background-color: #E2E8F0;
+  cursor: not-allowed;
+}
+
+.optional:disabled:hover {
+  background-color: #E2E8F0;
+  cursor: not-allowed;
+}
+
 .rotate-180 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
