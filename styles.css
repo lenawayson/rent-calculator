@@ -25,6 +25,12 @@
   @apply .rounded;
 }
 
+.selected {
+  border-top: solid 4px #48BB78;
+  border-right: solid 1px #E2E8F0;
+  border-left: solid 1px #E2E8F0;
+}
+
 .optional {
   @apply .bg-green-700
 }

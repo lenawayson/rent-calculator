@@ -12,10 +12,10 @@ const ACTIVE_RESIDENTS = 3;
 export class ResultsComponent implements OnInit {
 
   roommates = [
-    {name: "Lena", id: 0, rent: 630, parking: 100, utilities: null, owed: null},
-    {name: "Evan", id: 1, rent: 630, parking: 0, utilities: null, owed: null},
-    {name: "Megan", id: 2, rent: 1000, parking: 100, utilities: null, owed: null},
-    {name: "Chris", id: 4, rent: 250, parking: 0, utilities: 0, owed: null},
+    {name: "Lena", id: 0, rent: 635, parking: 100, utilities: null, owed: null},
+    {name: "Evan", id: 1, rent: 635, parking: 0, utilities: null, owed: null},
+    {name: "Megan", id: 2, rent: 1000, parking: 0, utilities: null, owed: null},
+    {name: "Chris", id: 3, rent: 250, parking: 100, utilities: 0, owed: null},
   ];
   selected = this.roommates[0]; //initial selection
   totalDue = null;
@@ -32,6 +32,10 @@ export class ResultsComponent implements OnInit {
 
   select(id){
     this.selected = this.roommates[id];
+  }
+
+  isSelected(id){
+    return id == this.selected.id;
   }
 
   calculateOwed(){
