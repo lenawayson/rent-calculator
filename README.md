@@ -1,5 +1,9 @@
 ## Rent Calculator
-This is an app I made to simplify calculating what is owed each month for rent and utilities. I have 2 roommates, 1 of which who is subleasing, so we all pay different amounts each month. I created this app during a rapid prototyping workshop. It was created with `angular-cli` and Tailwind CSS. 
+This is an app I made to simplify calculating what is owed each month for rent and utilities. I have 2 roommates, 1 of which who is subleasing, so we all pay different amounts each month. I created this app during a rapid prototyping workshop. It was created with `angular-cli` and Tailwind CSS and (should be) fully reponsive both in your browser as well as your mobile device.
+
+## To Do:
+- Add validation on form
+- Improve mobile view of tabs
 
 ## Rapid Prototyping Workshop Instructions:
 1. Fork the repository 
